@@ -1,6 +1,6 @@
 # LogLens 🔍
 
-A lightweight, robust command-line utility built in C# and .NET for parsing, analyzing, and reporting on log files safely.
+A lightweight and robust command-line utility built in C# and .NET for parsing, analyzing and reporting on log files safely.
 
 ## Features
 

@@ -1,14 +1,11 @@
-# Build results
 [Bb]in/
 [Oo]bj/
 out/
 
-# IDE / Editor files
 .vscode/
 .vs/
 *.user
 *.suo
 *.userosscation
 
-# Local test artifacts
 *.log

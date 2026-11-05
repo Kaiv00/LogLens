@@ -36,7 +36,7 @@ public class LogParser
 
         var parts = line.Split('|');
         if (parts.Length < 3)
-            return null; // Malformed line (ignores garbage gracefully)
+            return null; // Malformed line (this ignores garbage gracefully!)
 
         if (!DateTime.TryParse(parts[0].Trim(), out var timestamp))
             return null;
@@ -50,7 +50,7 @@ public class LogParser
             _ => LogLevel.Info // Default fallback for unknown tags
         };
 
-        // If the level string is completely invalid, treat it as malformed
+        // If the level string is completely invalid,  this treats it as malformed
         if (levelStr != "INFO" && levelStr != "WARNING" && levelStr != "ERROR")
             return null;
 

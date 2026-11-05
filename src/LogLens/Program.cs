@@ -10,7 +10,7 @@ class Program
     {
         Console.WriteLine("=== LogLens v1.0 ===");
 
-        // Use a default sample file if none provided via command line
+        // Just Use a default sample file if none provided via command line
         string filePath = args.Length > 0 ? args[0] : "sample.log";
 
         // Create a quick sample log file if it doesn't exist yet for easy testing
@@ -47,7 +47,7 @@ class Program
         Console.WriteLine($"Warnings:            {warningCount}");
         Console.WriteLine($"Infos:               {infoCount}");
 
-        // Most common errors
+        // Most common errors(at least, i think)
         var topErrors = entries
             .Where(e => e.Level == LogLevel.Error)
             .GroupBy(e => e.Message)
